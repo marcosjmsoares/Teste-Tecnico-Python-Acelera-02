@@ -2,21 +2,23 @@ import csv
 import pandas as pd
 import json
 from utils_log import log_decorator
-from timer_decorator import time_measure_decorator
+#from timer_decorator import time_measure_decorator
 import time
-
+from pathlib import Path
 
 setores = {"Vendas", "TI", "Financeiro", "RH", "Operações"} #setores validos
 
 @log_decorator
 def extrair_dados_e_consolidar(pasta: str) -> pd.DataFrame:
-    df = pd.read_csv("funcionarios.csv") #lendo csv e adicionando em uma tabela
-    # arquivo_json = glob.glob(os.path.join(pasta,'*.json'))
-    # df_list = [pd.read_json(arquivo) for arquivo in arquivo_json]
-    # df_total = pd.concat(df_list, ignore_index=True)
+    caminho = "funcionarios.csv"
+    start_time = time.time()
+
+    df = pd.read_csv(caminho) #lendo csv e adicionando em uma tabela
+
     return df
 
-print(df)
+df = extrair_dados_e_consolidar("dados")
+#print(df)
 print("------------------------------------")
 
 #normalizar tipos numéricos
@@ -71,20 +73,20 @@ with open("kpis.json", "w", encoding="utf-8") as f:
 
 
 #prints para fins de teste
-print(df)
-print("------------------------------------")
-print(media_por_area)
-print("------------------------------------")
-print(quantidade_funcionario_por_area)
-print("------------------------------------")
-print(df_bonus_total)
-print("------------------------------------")
-print(top3_funcionarios_maior_bonus)
-print("------------------------------------")
-df2 = pd.read_csv("relatorio_individual.csv")
-print(df2)
-print("------------------------------------")
-df3 = pd.read_csv("erros.csv")
-print(df3)
-print("------------------------------------")
-print(kpis)
+# print(df)
+# print("------------------------------------")
+# print(media_por_area)
+# print("------------------------------------")
+# print(quantidade_funcionario_por_area)
+# print("------------------------------------")
+# print(df_bonus_total)
+# print("------------------------------------")
+# print(top3_funcionarios_maior_bonus)
+# print("------------------------------------")
+# df2 = pd.read_csv("relatorio_individual.csv")
+# print(df2)
+# print("------------------------------------")
+# df3 = pd.read_csv("erros.csv")
+# print(df3)
+# print("------------------------------------")
+# print(kpis)

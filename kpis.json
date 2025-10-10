@@ -1,0 +1,60 @@
+{
+  "media_salario_por_area": [
+    {
+      "area": "Financeiro",
+      "media_por_area": 3050.0
+    },
+    {
+      "area": "Operações",
+      "media_por_area": 5200.0
+    },
+    {
+      "area": "RH",
+      "media_por_area": 3800.0
+    },
+    {
+      "area": "TI",
+      "media_por_area": 6100.0
+    },
+    {
+      "area": "Vendas",
+      "media_por_area": 4650.0
+    }
+  ],
+  "quantidade_funcionarios_por_area": [
+    {
+      "area": "Financeiro",
+      "quantidade_funcionarios": 2
+    },
+    {
+      "area": "Operações",
+      "quantidade_funcionarios": 2
+    },
+    {
+      "area": "RH",
+      "quantidade_funcionarios": 1
+    },
+    {
+      "area": "TI",
+      "quantidade_funcionarios": 3
+    },
+    {
+      "area": "Vendas",
+      "quantidade_funcionarios": 2
+    }
+  ],
+  "bonus_total_geral": [
+    {
+      "bonus_total_geral": 12061.0
+    }
+  ],
+  "top3_funcionarios_maior_bonus": [
+    {
+      "top3_funcionarios_maior_bonus": [
+        "Maria Alves",
+        "Ana Souza",
+        "Pedro Santos"
+      ]
+    }
+  ]
+}

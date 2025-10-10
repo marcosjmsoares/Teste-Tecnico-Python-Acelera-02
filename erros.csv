@@ -1,0 +1,5 @@
+id,nome,area,salario,bonus_percentual,campos_valido,bonus_final
+4,Daniel 9,TI,5200,0.1,False,1520.0
+5,,RH,3800,0.15,False,1570.0
+6,Elisa Prado,Financeiro,6100,-0.05,False,695.0
+8,João Silva,Operações,5300,,False,

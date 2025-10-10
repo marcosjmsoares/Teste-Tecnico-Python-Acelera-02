@@ -1,0 +1,62 @@
+2025-10-10T18:15:32.620527-0300 INFO Início 'extrair_dados_e_consolidar' às 1760130932.620528 | caminho=desafio02_acelera\funcionarios.csv utils_log.py
+2025-10-10T18:15:32.625525-0300 ERROR Erro em 'extrair_dados_e_consolidar' | fim=1760130932.625525 | duração=0.004997s | caminho=desafio02_acelera\funcionarios.csv utils_log.py
+Traceback (most recent call last):
+
+  File "C:\Estudos\Python\acelera\desafio02_acelera\main.py", line 20, in <module>
+    df = extrair_dados_e_consolidar("dados")
+         └ <function log_decorator.<locals>.wrapper at 0x00000154CCFFA4D0>
+
+> File "C:\Estudos\Python\acelera\desafio02_acelera\utils_log.py", line 35, in wrapper
+    qtd_linhas = len(df) if isinstance(df, pd.DataFrame) else None
+                     │                 └    id           nome        area  salario bonus_percentual
+                     │                   0   1      Ana Souza      Vendas     4500              0.1
+                     │                   1   2  ...
+                     └    id           nome        area  salario bonus_percentual
+                       0   1      Ana Souza      Vendas     4500              0.1
+                       1   2  ...
+
+NameError: name 'pd' is not defined
+2025-10-10T18:16:31.245452-0300 INFO Início 'extrair_dados_e_consolidar' às 1760130991.245452 | caminho=desafio02_acelera\funcionarios.csv utils_log.py
+2025-10-10T18:16:31.250397-0300 INFO Fim 'extrair_dados_e_consolidar' às 1760130991.250397 | duração=0.004945s | linhas=10 | caminho=desafio02_acelera\funcionarios.csv utils_log.py
+2025-10-10T18:16:38.632449-0300 INFO Início 'extrair_dados_e_consolidar' às 1760130998.632450 | caminho=desafio02_acelera\funcionarios.csv utils_log.py
+2025-10-10T18:16:38.635436-0300 INFO Fim 'extrair_dados_e_consolidar' às 1760130998.635437 | duração=0.002987s | linhas=10 | caminho=desafio02_acelera\funcionarios.csv utils_log.py
+2025-10-10T18:19:29.778812-0300 INFO Início 'extrair_dados_e_consolidar' às 1760131169.778812 | caminho=desafio02_acelera\funcionarios.csv utils_log.py
+2025-10-10T18:19:29.779787-0300 INFO Início 'extrair_dados_e_consolidar' caminho=desafio02_acelera\funcionarios.csv utils_log.py
+2025-10-10T18:19:46.106198-0300 INFO Início 'extrair_dados_e_consolidar' às 1760131186.106199 | caminho=desafio02_acelera\funcionarios.csv utils_log.py
+2025-10-10T18:19:46.109198-0300 INFO Fim 'extrair_dados_e_consolidar' às 1760131186.109199 | duração=0.003000s | linhas=10 | caminho=desafio02_acelera\funcionarios.csv utils_log.py
+2025-10-10T18:20:13.342329-0300 INFO Início 'extrair_dados_e_consolidar' às 1760131213.342329 | caminho=desafio02_acelera\funcionarios.csv utils_log.py
+2025-10-10T18:20:13.343328-0300 INFO Início 'extrair_dados_e_consolidar' caminho=desafio02_acelera\funcionarios.csv utils_log.py
+2025-10-10T18:20:13.346325-0300 INFO Fim 'extrair_dados_e_consolidar' às 1760131213.346326 | duração=0.003997s | linhas=10 | caminho=desafio02_acelera\funcionarios.csv utils_log.py
+2025-10-10T18:23:24.481277-0300 INFO Início 'extrair_dados_e_consolidar' às 1760131404.481032 | caminho=desafio02_acelera\funcionarios.csv utils_log.py
+2025-10-10T18:23:24.482271-0300 INFO Início 'extrair_dados_e_consolidar' caminho=desafio02_acelera\funcionarios.csv utils_log.py
+2025-10-10T18:23:24.485324-0300 ERROR Erro em 'extrair_dados_e_consolidar' | fim=1760131404.485324 | duração=0.004292s | caminho=desafio02_acelera\funcionarios.csv utils_log.py
+Traceback (most recent call last):
+
+  File "C:\Estudos\Python\acelera\desafio02_acelera\main.py", line 20, in <module>
+    df = extrair_dados_e_consolidar("dados")
+         └ <function log_decorator.<locals>.wrapper at 0x000001AABFECA680>
+
+> File "C:\Estudos\Python\acelera\desafio02_acelera\utils_log.py", line 41, in wrapper
+    logger.info(f"Fim '{func.__name__}' às {datetime.fromtimestamp(fim()).strftime('%Y-%m-%d %H:%M:%S')} | linhas={qtd_linhas}")
+    │      └ <function Logger.info at 0x000001AAC0137AC0>
+    └ <loguru.logger handlers=[(id=1, level=20, sink=<stderr>), (id=2, level=20, sink='meu_arquivo_de_logs.log')]>
+
+NameError: name 'datetime' is not defined
+2025-10-10T18:24:17.554288-0300 INFO Início 'extrair_dados_e_consolidar' às 1760131457.554288 | caminho=desafio02_acelera\funcionarios.csv utils_log.py
+2025-10-10T18:24:17.555273-0300 INFO Início 'extrair_dados_e_consolidar' caminho=desafio02_acelera\funcionarios.csv utils_log.py
+2025-10-10T18:24:17.558287-0300 ERROR Erro em 'extrair_dados_e_consolidar' | fim=1760131457.558287 | duração=0.003999s | caminho=desafio02_acelera\funcionarios.csv utils_log.py
+Traceback (most recent call last):
+
+  File "C:\Estudos\Python\acelera\desafio02_acelera\main.py", line 20, in <module>
+    df = extrair_dados_e_consolidar("dados")
+         └ <function log_decorator.<locals>.wrapper at 0x0000028BA4ACA680>
+
+> File "C:\Estudos\Python\acelera\desafio02_acelera\utils_log.py", line 41, in wrapper
+    logger.info(f"Fim '{func.__name__}' às {datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d %H:%M:%S')} | duração={int(dur//3600):02d}:{int((dur%3600)//60):02d}:{int(dur%60):02d} | linhas={qtd_linhas}")
+    │      └ <function Logger.info at 0x0000028BA4D37AC0>
+    └ <loguru.logger handlers=[(id=1, level=20, sink=<stderr>), (id=2, level=20, sink='meu_arquivo_de_logs.log')]>
+
+NameError: name 'datetime' is not defined
+2025-10-10T18:24:24.896704-0300 INFO Início 'extrair_dados_e_consolidar' às 1760131464.896704 | caminho=desafio02_acelera\funcionarios.csv utils_log.py
+2025-10-10T18:24:24.897707-0300 INFO Início 'extrair_dados_e_consolidar' caminho=desafio02_acelera\funcionarios.csv utils_log.py
+2025-10-10T18:24:24.900708-0300 INFO Fim 'extrair_dados_e_consolidar' às 1760131464.900708 | linhas=10 utils_log.py
